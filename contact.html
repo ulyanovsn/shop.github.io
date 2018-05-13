@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <style type="text/css">
+     input{
+      font-family: Arial;
+      font-weight: bold;
+      color: blue;
+      font-size: 14pt; 
+     }
+     input[type="submit"]{
+      color: green;
+     }
+     input[type="reset"]{
+      color: red;
+     }
+     textarea{
+      font-family: Arial;
+      font-weight: bold;
+      color: blue;
+      font-size: 14pt; 
+     }
+     input[type="e-mail"]:focus{
+     color: violet;
+     background-color: green;
+     }
+     input[type="text"]{
+     text-transform: capitalize;
+     }
+     .address{
+     display: flex; 
+     justify-content: space-between; 
+     }
+     .contant p{
+      padding: 5px;
+      }
+     textarea{
+      width: 600px;
+      height: 100px;
+     }
+    @media screen and(max-width: 600px){
+      textarea{width: 300px;}
+     }
+
+   </style>
+</head>
+<body>
+  <div class="container">
+
+  <div class="header">                                   <!-- begin header-->
+ <!-- -->
+ <a href="index.html">                                 
+  <img src = "imgs/logo.png"
+         alt = "Логотип компании"
+       title = "Минералка продакшн"   
+       class="logo" 
+    /> </a>
+  <ul class="menu">
+       <li><a href="index.html">Главная</a></li>
+       <li><a href="catalog.html">Каталог</a></li>
+       <li><a href="#">Контакты</a></li>
+  </ul> 
+<!-- -->
+</div> 
+
+    <div class="contant">
+      
+    <h1>Контакты</h1>
+
+    <h2>Напишите нам</h2>
+    
+    <div>
+      <form>
+    <fieldset>   
+        <legend class="center"> Заполните, пожалуйста, форму </legend>
+        <p>Имя &nbsp;&nbsp;&nbsp; <input type="text" name="name" placeholder="Ваше Имя" > </p>
+        <p>E-mail                 <input type="e-mail" name="email" placeholder="name@postname.domen" > </p>
+        <p>Тема &nbsp;&nbsp;      <input type="text" name="subj" placeholder="Тема сообщения" > </p>
+        <p>Текст сообщения</p>
+
+        <div><textarea> </textarea></div>
+        <div><input type="submit" name="go" value="Отправить"> &nbsp;&nbsp; <input type="reset" name="reset" value="Сбросить"></div>  
+     </fieldset> 
+    </form> 
+    </div>
+    <h2>Наши координаты</h2>
+    <p>Телефон: 8(917)999-42-44</p>
+
+    <div class="address">
+    <p>Адрес: г.&nbsp;Москва, ул.&nbsp;2-я&nbsp;Бауманская, д.&nbsp;5 </p>
+      <a href="https://yandex.ru/maps/-/CBU54UuWDD" target="_blank" class="button"> на карте &gt;</a> 
+    </div>
+
+    <p>E-mail: ulyanovsn@mail.ru</p>
+  
+    </div>                                                 
+
+
+    
+    <div class="footer"> &copy;&nbsp;Все права защищены, 2018г. </div>
+
+  </div>
+</body>
+</html>

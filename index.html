@@ -1,0 +1,65 @@
+<!-- 
+     Ульянов Сергей Николаевич
+     Cтраничка описания товара для интернет-магазина 
+     Статическая страница содержит название товара (заголовок 1 уровня), его описание, характеристики и подробное описание (заголовок 2 уровня),
+     подвал с надписью, отчерченную горизонтальной чертой.
+
+     Дополнительно:
+     Добавлено форматирование заголовков, отступы полей, маркированные списки.
+ -->
+<!doctype html>
+<html>
+<head>
+<title> Mineral Waters </title>
+<meta charset = "UTF8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+.contant p{
+margin-top: 10px;
+}
+.to-interior{
+  display: flex; 
+  justify-content: space-between; 
+  padding-top: 20px;
+}
+.author{
+  text-align: right;               
+  font-style: italic;
+  margin-top: 10px;
+}
+
+</style>
+</head>
+<body >
+  <div class="container">                                <!-- begin container-->
+
+  <div class="header">                                   <!-- begin header-->
+  <img src = "imgs/logo.png"
+         alt = "Логотип компании"
+       title = "Минералка продакшн"   
+       class="logo" 
+    /> 
+  <ul class="menu">
+       <li><a href="#">Главная</a></li>
+       <li><a href="catalog.html">Каталог</a></li>
+       <li><a href="contact.html">Контакты</a></li>
+  </ul>
+</div>                                                   <!-- end header-->
+
+  <div class="author">Сверстал Ульянов С.Н.</div>
+
+<div class="contant">                                    <!-- begin contant-->
+<h1> ООО &laquo; Минералка продакшн &raquo; </h1> 
+<p class="center" > Приветствуем Вас, дорогой посетитель сайта!</p>
+<p>Здесь вы&nbsp;можете приобрести минеральную воду для излечения от&nbsp;многих проблем со&nbsp;здоровьем. Минеральная вода это вода, наделённая полезными лечебными свойствами. Свойствами от&nbsp;природы. О&nbsp;пользе минеральной воды много пишут и&nbsp;рассказывают. Минеральная вода необходима при лечении многих заболеваний. Её&nbsp;положительно заряженные ионы дают помимо вспомогательного эффекта в&nbsp;лечении ещё и&nbsp;укрепление иммунной системы человеческого организма. Минеральная вода&nbsp;&mdash; это источник жизни. </p>
+<div class="to-interior">
+<p> Посетите также наш <span style="color: darkgreen;">сайт интерьера </span></p> 
+<a href="interior-index.html" target="_blank" class="button">interior &gt;</a> 
+</div>
+</div>    
+                                               <!-- end contant-->
+<div class="footer"> &copy;&nbsp;Все права защищены, 2018г. </div>
+
+</div>                                                  <!-- end container-->
+</body>
+</html>
